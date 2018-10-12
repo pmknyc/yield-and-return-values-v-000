@@ -24,6 +24,7 @@ def hello_save(array)
     collection << yield(array[i])
     i += 1
   end
+  collection
 end
 
 hello_save(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
