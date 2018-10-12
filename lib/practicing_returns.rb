@@ -8,7 +8,6 @@ def hello(array)
   end
 end
 
-
 # call the method and give a block to execute
 hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
 #return value of above block is the "Hi, #{name}" output
@@ -27,4 +26,4 @@ def hello_save(array)
   collection
 end
 
-hello_save(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+hello_save(["Tim", "Tom", "Jim"]) { |name| name.upcase }
