@@ -25,3 +25,5 @@ def hello_save(array)
     i += 1
   end
 end
+
+hello_save(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
